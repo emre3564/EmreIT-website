@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Primary Meta Tags -->
+  <title>EmreIT — Enterprise Hardware, Network Infrastructure & Cloud Consulting</title>
+  <meta name="title" content="EmreIT — Enterprise Hardware, Network Infrastructure & Cloud Consulting">
+  <meta name="description"
+    content="EmreIT delivers mission-critical IT solutions: high-performance computer parts & server hardware, enterprise network infrastructure, and resilient cloud architecture.">
+  <meta name="keywords"
+    content="EmreIT, IT services, server hardware, computer parts, network infrastructure, enterprise networking, cloud consulting, AWS, Azure, GCP, zero trust">
+  <meta name="author" content="EmreIT Systems Engineering">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.emreit.com/">
+  <meta property="og:title" content="EmreIT — Mission-Critical IT & Cloud Infrastructure">
+  <meta property="og:description"
+    content="Leading provider of custom hardware solutions, multi-gigabit enterprise networking, and modern cloud migration consulting.">
+  <meta property="og:image" content="https://www.emreit.com/assets/images/og-preview.jpg">
+
+  <!-- Twitter Card -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="EmreIT — Mission-Critical IT & Cloud Infrastructure">
+  <meta property="twitter:description"
+    content="Leading provider of custom hardware solutions, multi-gigabit enterprise networking, and modern cloud migration consulting.">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233b82f6'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+
+  <!-- Font and Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- ================= Navigation Header ================= -->
+  <header class="header" role="banner">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="EmreIT Corporate Home">
+        <div class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+            <line x1="6" y1="6" x2="6.01" y2="6"></line>
+            <line x1="6" y1="18" x2="6.01" y2="18"></line>
+          </svg>
+        </div>
+        <span class="logo-text">Emre<span>IT</span></span>
+      </a>
+
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active" data-i18n="nav_home">Home</a></li>
+          <li><a href="#services" class="nav-link" data-i18n="nav_services">Services</a></li>
+          <li><a href="#hardware" class="nav-link" data-i18n="nav_hardware">Hardware</a></li>
+          <li><a href="#network" class="nav-link" data-i18n="nav_network">Network</a></li>
+          <li><a href="#cloud" class="nav-link" data-i18n="nav_cloud">Cloud</a></li>
+          <li><a href="#configurator" class="nav-link" data-i18n="nav_configurator">Server Configurator</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <select id="langSelect" class="lang-select" aria-label="Select language">
+            <option value="tr">🇹🇷 TR</option>
+            <option value="en">🇬🇧 EN</option>
+            <option value="de">🇩🇪 DE</option>
+          </select>
+        </div>
+
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme">
+          <!-- Populated by theme.js -->
+        </button>
+
+        <a href="#contact" class="btn btn-primary" data-i18n="btn_request_consult">Request Consultation</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="navMenu">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ================= Hero Section ================= -->
+    <section id="home" class="hero-section" aria-label="Introduction">
+      <div class="container hero-grid">
+        <div class="hero-content">
+            <div class="section-tag" data-i18n="hero_tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+              </svg>
+              Next-Gen Enterprise Infrastructure
+            </div>
+            <h1 data-i18n="hero_title">Architecting High-Speed <span class="gradient-text">Hardware, Networks &
+                Cloud</span></h1>
+            <p data-i18n="hero_desc">
+              EmreIT delivers enterprise-grade IT infrastructure engineered for high availability, zero-trust security,
+              and seamless cloud migration. Empowering modern enterprises with turnkey computing power.
+            </p>
+            <div class="hero-cta">
+                <a href="#services" class="btn btn-primary" data-i18n="hero_btn_services">
+                  Explore Core Services
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a href="#configurator" class="btn btn-outline" data-i18n="nav_configurator">Server Configurator</a>
+            </div>
+
+            <div class="hero-metrics">
+              <div class="metric-item">
+                <div class="metric-val">99.99<span>%</span></div>
+                <div class="metric-label">Uptime Architecture SLA</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-val">10<span>Gbps+</span></div>
+                <div class="metric-label">Fiber & Switching Backbone</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-val">24<span>/7/365</span></div>
+                <div class="metric-label">Mission-Critical Support</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="floating-pill pill-top-right">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              <span>Zero-Trust Perimeter</span>
+            </div>
+
+            <div class="hero-card-stack">
+              <div class="terminal-header">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+                <span class="terminal-title">emreit-core-datacenter :: status</span>
+              </div>
+
+              <div class="server-rack-status">
+                <div class="status-row">
+                  <div class="status-left">
+                    <div class="pulse-indicator"></div>
+                    <div>
+                      <strong style="font-size: 0.9rem; display: block;">Primary Compute Node #1</strong>
+                      <span style="font-size: 0.75rem; color: var(--text-muted); font-family: monospace;">2x AMD EPYC
+                        9654
+                        | 1.5TB DDR5 ECC</span>
+                    </div>
+                  </div>
+                  <span class="item-badge">Active (18% Load)</span>
+                </div>
+
+                <div class="status-row">
+                  <div class="status-left">
+                    <div class="pulse-indicator"></div>
+                    <div>
+                      <strong style="font-size: 0.9rem; display: block;">High-Speed Fabric Switch
+                        (Arista/Cisco)</strong>
+                      <span style="font-size: 0.75rem; color: var(--text-muted); font-family: monospace;">40Gbps QSFP+
+                        Redundant Ring</span>
+                    </div>
+                  </div>
+                  <span class="item-badge">Optimal (0% Loss)</span>
+                </div>
+
+                <div class="status-row">
+                  <div class="status-left">
+                    <div class="pulse-indicator"></div>
+                    <div>
+                      <strong style="font-size: 0.9rem; display: block;">Cloud Sync Gateway (Hybrid Sync)</strong>
+                      <span style="font-size: 0.75rem; color: var(--text-muted); font-family: monospace;">Direct Connect
+                        /
+                        ExpressRoute</span>
+                    </div>
+                  </div>
+                  <span class="item-badge">Encrypted (AES-256)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-pill pill-bottom-left">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <span>Tier IV Data Center Standards</span>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- ================= Services Overview ================= -->
+    <section id="services" class="section section-alt" aria-labelledby="services-title">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-tag">Core Competencies</div>
+          <h2 id="services-title" class="section-title">End-to-End Enterprise Technology Ecosystem</h2>
+          <p class="section-desc">
+            EmreIT unifies computing hardware procurement, resilient network topologies, and scalable cloud engineering
+            into one integrated delivery framework.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Hardware -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+              </svg>
+            </div>
+            <h3>Computer Parts & Hardware</h3>
+            <p>
+              High-throughput server racks, NVMe storage fabrics, enterprise ECC memory kits, and custom GPU computing
+              clusters tailored for data analytics and continuous workloads.
+            </p>
+            <ul class="feature-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Certified Enterprise Component Supply
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Hardware Burn-in & Stress Diagnostics
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Hot-Swap Redundancy & Spares SLA
+              </li>
+            </ul>
+            <a href="#hardware" class="btn btn-outline" style="margin-top: auto;">Explore Hardware Specs</a>
+          </article>
+
+          <!-- Card 2: Network -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3>Network Infrastructure Setup</h3>
+            <p>
+              Structured cabling, multi-gigabit core routing, SD-WAN interconnects, and Wi-Fi 6E/7 installations backed
+              by Zero-Trust perimeter network defense.
+            </p>
+            <ul class="feature-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                L2/L3 Routing & Layered Segmentation
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Fiber Optic Splice & Cat6A Certification
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Next-Gen AI Firewall & IDS/IPS
+              </li>
+            </ul>
+            <a href="#network" class="btn btn-outline" style="margin-top: auto;">View Network Topologies</a>
+          </article>
+
+          <!-- Card 3: Cloud -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              </svg>
+            </div>
+            <h3>Cloud Services & Consulting</h3>
+            <p>
+              Strategic cloud migrations, hybrid cloud interconnects, microservices orchestration on Kubernetes, and
+              comprehensive Disaster Recovery as a Service (DRaaS).
+            </p>
+            <ul class="feature-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Multi-Cloud Architecture (AWS, Azure, GCP)
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Automated CI/CD & Terraform GitOps
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                24/7 Managed Cloud Ops & Cost Optimization
+              </li>
+            </ul>
+            <a href="#cloud" class="btn btn-outline" style="margin-top: auto;">Discover Cloud Roadmaps</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Hardware Deep-Dive ================= -->
+    <section id="hardware" class="section" aria-labelledby="hardware-title">
+      <div class="container">
+        <div class="deep-dive">
+          <div class="deep-dive-content">
+            <div class="section-tag">Enterprise Compute & Storage</div>
+            <h2 id="hardware-title">Computer Parts & Precision Hardware</h2>
+            <p>
+              Hardware reliability is non-negotiable. EmreIT supplies OEM and enterprise-certified hardware components
+              optimized for thermal dissipation, peak throughput, and extended lifecycle endurance.
+            </p>
+            <div class="spec-badge-group">
+              <span class="spec-badge">PCIe Gen 5.0</span>
+              <span class="spec-badge">NVMe U.2/U.3 SSDs</span>
+              <span class="spec-badge">DDR5 ECC Registered</span>
+              <span class="spec-badge">Titanium 80-Plus PSUs</span>
+              <span class="spec-badge">NVIDIA Enterprise GPUs</span>
+            </div>
+            <p style="font-size: 0.95rem; color: var(--text-dim);">
+              Every component is verified through 72-hour thermal stress tests and automated memory fault analyzers
+              before deployment into client environments.
+            </p>
+            <a href="#contact" class="btn btn-primary" style="margin-top: 1rem;">Order Component Batch</a>
+          </div>
+
+          <div class="deep-dive-card">
+            <h3
+              style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+              Hardware Qualification Benchmark
+            </h3>
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.35rem;">
+                  <span>Continuous IOPS Stress Tolerance</span>
+                  <strong style="color: var(--accent-cyan);">99.8%</strong>
+                </div>
+                <div style="background: var(--bg-primary); height: 8px; border-radius: 4px; overflow: hidden;">
+                  <div style="background: var(--accent-gradient); width: 99.8%; height: 100%;"></div>
+                </div>
+              </div>
+              <div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.35rem;">
+                  <span>ECC Error Correction Rate</span>
+                  <strong style="color: var(--accent-cyan);">100%</strong>
+                </div>
+                <div style="background: var(--bg-primary); height: 8px; border-radius: 4px; overflow: hidden;">
+                  <div style="background: var(--accent-gradient); width: 100%; height: 100%;"></div>
+                </div>
+              </div>
+              <div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.35rem;">
+                  <span>Thermal Dissipation Headroom (Full Load)</span>
+                  <strong style="color: var(--accent-cyan);">+24°C Headroom</strong>
+                </div>
+                <div style="background: var(--bg-primary); height: 8px; border-radius: 4px; overflow: hidden;">
+                  <div style="background: var(--accent-gradient); width: 92%; height: 100%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Network Deep-Dive ================= -->
+    <section id="network" class="section section-alt" aria-labelledby="network-title">
+      <div class="container">
+        <div class="deep-dive reversed">
+          <div class="deep-dive-content">
+            <div class="section-tag">Critical Connectivity</div>
+            <h2 id="network-title">Network Infrastructure & Cabling Architecture</h2>
+            <p>
+              From corporate headquarters to industrial campus environments, we design and deploy low-latency network
+              backbones that never drop a packet.
+            </p>
+            <div class="spec-badge-group">
+              <span class="spec-badge">BGP / OSPF Dynamic Routing</span>
+              <span class="spec-badge">802.1X Network Access Control</span>
+              <span class="spec-badge">10G/40G/100G Fiber Rings</span>
+              <span class="spec-badge">SD-WAN Multi-Homing</span>
+              <span class="spec-badge">Wi-Fi 7 Multi-Link Operation (MLO)</span>
+            </div>
+            <p style="font-size: 0.95rem; color: var(--text-dim);">
+              Includes complete Fluke Networks OTDR / Cable Analyzer certification with printed attenuation
+              documentation for all deployed copper and single/multimode fiber links.
+            </p>
+            <a href="#contact" class="btn btn-primary" style="margin-top: 1rem;">Schedule Site Survey</a>
+          </div>
+
+          <div class="deep-dive-card">
+            <h3
+              style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              Standard 5-Step Deployment Lifecycle
+            </h3>
+            <ol style="list-style: none; display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.9rem;">
+              <li style="display: flex; gap: 0.75rem;">
+                <span style="color: var(--accent-cyan); font-weight: 700;">01.</span>
+                <span><strong>RF & Physical Site Survey:</strong> Spectrum heatmap, heat dissipation analysis and cable
+                  pathway routing.</span>
+              </li>
+              <li style="display: flex; gap: 0.75rem;">
+                <span style="color: var(--accent-cyan); font-weight: 700;">02.</span>
+                <span><strong>Topology Design:</strong> Spine-leaf or core-distribution-access architecture with
+                  VRRP/HSRP redundancy.</span>
+              </li>
+              <li style="display: flex; gap: 0.75rem;">
+                <span style="color: var(--accent-cyan); font-weight: 700;">03.</span>
+                <span><strong>Hardware Staging:</strong> Out-of-band management configuration, firmware hardening, and
+                  port isolation.</span>
+              </li>
+              <li style="display: flex; gap: 0.75rem;">
+                <span style="color: var(--accent-cyan); font-weight: 700;">04.</span>
+                <span><strong>Physical Installation:</strong> Neat-patch rack mounting, structured cable comb dressing,
+                  labeled patch panels.</span>
+              </li>
+              <li style="display: flex; gap: 0.75rem;">
+                <span style="color: var(--accent-cyan); font-weight: 700;">05.</span>
+                <span><strong>Certification & Handover:</strong> 100% link test reports, disaster failover dry-run, and
+                  NOC integration.</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Cloud Deep-Dive ================= -->
+    <section id="cloud" class="section" aria-labelledby="cloud-title">
+      <div class="container">
+        <div class="deep-dive">
+          <div class="deep-dive-content">
+            <div class="section-tag">Cloud Solutions & Engineering</div>
+            <h2 id="cloud-title">Cloud Services & Architecture Consulting</h2>
+            <p>
+              Navigate public, private, and hybrid cloud adoption with seasoned cloud architects. We reduce operational
+              complexity and minimize recurring cloud expenditure through intelligent infrastructure automation.
+            </p>
+            <div class="spec-badge-group">
+              <span class="spec-badge">Kubernetes (EKS/AKS/GKE)</span>
+              <span class="spec-badge">Infrastructure as Code (Terraform)</span>
+              <span class="spec-badge">Zero-Downtime Migration</span>
+              <span class="spec-badge">FinOps Cost Governance</span>
+              <span class="spec-badge">SOC2 & ISO 27001 Compliance</span>
+            </div>
+            <p style="font-size: 0.95rem; color: var(--text-dim);">
+              Experience seamless hybrid cloud connectivity via dedicated cloud interconnects with redundant IPsec VPN
+              fallback for uninterrupted business continuity.
+            </p>
+            <a href="#contact" class="btn btn-primary" style="margin-top: 1rem;">Book Cloud Audit</a>
+          </div>
+
+          <div class="deep-dive-card">
+            <h3
+              style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+              </svg>
+              Enterprise Migration Benefits
+            </h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div
+                style="background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <div style="font-size: 1.5rem; font-weight: 800; color: #10b981; margin-bottom: 0.2rem;">-38%</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Average Cloud Spend with FinOps Right-Sizing
+                </div>
+              </div>
+              <div
+                style="background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <div style="font-size: 1.5rem; font-weight: 800; color: #3b82f6; margin-bottom: 0.2rem;">&lt;15m</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Recovery Point Objective (RPO) in DRaaS</div>
+              </div>
+              <div
+                style="background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <div style="font-size: 1.5rem; font-weight: 800; color: #06b6d4; margin-bottom: 0.2rem;">0 Downtime
+                </div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Blue/Green & Canary Cloud Cutover Strategy
+                </div>
+              </div>
+              <div
+                style="background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <div style="font-size: 1.5rem; font-weight: 800; color: #f59e0b; margin-bottom: 0.2rem;">100% IaC</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Declarative GitOps Infrastructure Management
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Interactive Server Configurator ================= -->
+    <section id="configurator" class="section" aria-labelledby="configurator-title">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-tag" data-i18n="config_tag">Interactive Budgeting Tool</div>
+          <h2 id="configurator-title" class="section-title" data-i18n="config_title">Custom Server & Hardware
+            Configurator</h2>
+          <p class="section-desc" data-i18n="config_desc">
+            Configure enterprise-grade rack servers suited to your specific workloads, see real-time price estimation,
+            and transfer your build to an official quote inquiry with one click.
+          </p>
+        </div>
+
+        <div class="configurator-grid">
+          <!-- Selection Controls Panel -->
+          <div class="config-controls-card">
+            <h3
+              style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; color: #fff; display: flex; align-items: center; gap: 0.6rem;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+              Select Hardware Components
+            </h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cfgFormFactor" class="form-label" data-i18n="cfg_form_factor">Chassis / Form Factor</label>
+                <select id="cfgFormFactor" class="form-control">
+                  <option value="1U" data-price="950">1U Ultra-Dense Rack Server (+$950)</option>
+                  <option value="2U" data-price="1450" selected>2U Dual-Socket Standard Rack (+$1,450)</option>
+                  <option value="4U" data-price="2800">4U Multi-GPU & AI Heavy Compute (+$2,800)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="cfgCpu" class="form-label" data-i18n="cfg_cpu">Processor Architecture (CPU)</label>
+                <select id="cfgCpu" class="form-control">
+                  <option value="epyc32" data-price="2200">1x AMD EPYC 9354 (32-Core / 64-Thread, 3.25GHz) (+$2,200)
+                  </option>
+                  <option value="epyc64" data-price="4600" selected>2x AMD EPYC 9554 (64-Core / 128-Thread) (+$4,600)
+                  </option>
+                  <option value="epyc96" data-price="8900">2x AMD EPYC 9654 Flagship (192-Thread Workhorse) (+$8,900)
+                  </option>
+                  <option value="xeon64" data-price="5200">2x Intel Xeon Platinum 8468 (96-Thread AI Boost) (+$5,200)
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cfgRam" class="form-label" data-i18n="cfg_ram">ECC DDR5 Memory (RAM)</label>
+                <select id="cfgRam" class="form-control">
+                  <option value="128" data-price="900">128 GB (4x 32GB) DDR5-4800 ECC Registered (+$900)</option>
+                  <option value="256" data-price="1800" selected>256 GB (8x 32GB) DDR5-4800 ECC Registered (+$1,800)
+                  </option>
+                  <option value="512" data-price="3600">512 GB (16x 32GB) DDR5-4800 High-Bandwidth (+$3,600)</option>
+                  <option value="1024" data-price="7500">1 TB (16x 64GB) Mission-Critical Memory (+$7,500)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="cfgStorage" class="form-label" data-i18n="cfg_storage">Storage Array (NVMe / SSD)</label>
+                <select id="cfgStorage" class="form-control">
+                  <option value="nvme_3_8" data-price="1200">2x 3.84TB Enterprise NVMe Gen5 U.2 RAID 1 (+$1,200)
+                  </option>
+                  <option value="nvme_7_6" data-price="2600" selected>4x 7.68TB Enterprise NVMe Gen5 U.2 RAID 10
+                    (+$2,600)</option>
+                  <option value="nvme_allflash" data-price="6400">8x 7.68TB All-Flash SAN Storage Cluster (+$6,400)
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cfgNetwork" class="form-label" data-i18n="cfg_network">Network Interface Card (NIC)</label>
+                <select id="cfgNetwork" class="form-control">
+                  <option value="nic10g" data-price="380">Dual-Port 10GbE SFP+ Intel X520 (+$380)</option>
+                  <option value="nic25g" data-price="780" selected>Dual-Port 25GbE SFP28 Broadcom NetXtreme (+$780)
+                  </option>
+                  <option value="nic100g" data-price="1650">Dual-Port 100GbE QSFP28 Mellanox ConnectX-6 (+$1,650)
+                  </option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="cfgOs" class="form-label" data-i18n="cfg_os_sla">Operating System & Support SLA</label>
+                <select id="cfgOs" class="form-control">
+                  <option value="linux_std" data-price="0">Enterprise Linux (Ubuntu/AlmaLinux) + Standard Support (+$0)
+                  </option>
+                  <option value="rhel" data-price="800" selected>Red Hat Enterprise Linux (RHEL) + 24/7 Red Hat SLA
+                    (+$800)</option>
+                  <option value="win_srv" data-price="1100">Windows Server 2022/2025 Datacenter Edition (+$1,100)
+                  </option>
+                  <option value="vmware" data-price="2200">VMware vSphere Enterprise Plus Hypervisor (+$2,200)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Price & Summary Panel -->
+          <div class="config-summary-card">
+            <div class="summary-top">
+              <div class="item-category" data-i18n="cfg_est_summary">CONFIGURATION BREAKDOWN</div>
+              <ul id="cfgSpecList" class="spec-summary-list">
+                <!-- Injected via configurator.js -->
+              </ul>
+            </div>
+
+            <div class="price-container">
+              <span class="price-label" data-i18n="cfg_est_price">Estimated Price (USD)</span>
+              <div id="cfgTotalPrice" class="price-amount">$11,230</div>
+              <p class="price-disclaimer">* Includes OEM hardware assembly, 72-hour thermal stress validation, and
+                3-year next-business-day on-site replacement warranty.</p>
+            </div>
+
+            <button id="cfgTransferBtn" class="btn btn-primary" style="width: 100%; padding: 0.95rem;">
+              <span data-i18n="cfg_btn_transfer">Request Quote with this Build</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Interactive Catalog & Filter ================= -->
+    <section id="catalog" class="section section-alt" aria-labelledby="catalog-title">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-tag">Live Solutions Explorer</div>
+          <h2 id="catalog-title" class="section-title">Hardware, Network & Cloud Solution Catalog</h2>
+          <p class="section-desc">
+            Explore ready-to-deploy hardware units, networking configurations, and specialized cloud consulting
+            packages.
+          </p>
+        </div>
+
+        <div class="catalog-controls">
+          <div class="filter-buttons" role="tablist" aria-label="Catalog category filters">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Solutions</button>
+            <button class="filter-btn" data-filter="hardware" role="tab" aria-selected="false">Hardware &
+              Compute</button>
+            <button class="filter-btn" data-filter="network" role="tab" aria-selected="false">Network &
+              Infrastructure</button>
+            <button class="filter-btn" data-filter="cloud" role="tab" aria-selected="false">Cloud Consulting</button>
+          </div>
+
+          <div class="search-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="catalogSearch" placeholder="Filter equipment or keywords..."
+              aria-label="Search catalog items">
+          </div>
+        </div>
+
+        <div class="catalog-grid" id="catalogContainer">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Contact & Quote Form ================= -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-tag">Get in Touch</div>
+          <h2 id="contact-title" class="section-title">Request Technical Consultation & Quote</h2>
+          <p class="section-desc">
+            Connect directly with an EmreIT systems architect to evaluate your technical specifications or request
+            equipment pricing.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <div>
+              <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; color: #fff;">Direct Corporate
+                Inquiries</h3>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </div>
+                <div class="info-text">
+                  <h4>Phone & NOC Hotline</h4>
+                  <p><a href="tel:+18005553673">+1 (800) 555-EMRE (3673)</a></p>
+                  <p style="font-size: 0.8rem; color: var(--text-dim);">24/7/365 Emergency NOC dispatch</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div class="info-text">
+                  <h4>Enterprise Email</h4>
+                  <p><a href="mailto:solutions@emreit.com">solutions@emreit.com</a></p>
+                  <p><a href="mailto:procurement@emreit.com">procurement@emreit.com</a></p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div class="info-text">
+                  <h4>Headquarters & Staging Lab</h4>
+                  <p>Tech Center Plaza, Suite 400<br>Silicon Valley Technology Corridor</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="background: var(--bg-primary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); margin-top: 1rem;">
+              <span
+                style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: #10b981; font-weight: 600;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <circle cx="12" cy="12" r="10" />
+                </svg>
+                Guaranteed Rapid Response SLA
+              </span>
+              <p style="font-size: 0.82rem; color: var(--text-dim); margin-top: 0.4rem;">
+                Requests submitted via this form are routed to lead systems engineers with a strict maximum 2-hour
+                business reply SLA.
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <div id="formAlert" class="form-alert" role="alert"></div>
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullName" class="form-label">Full Name *</label>
+                  <input type="text" id="fullName" class="form-control" placeholder="e.g. Alexander Vance" required>
+                  <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Corporate Email *</label>
+                  <input type="email" id="email" class="form-control" placeholder="alexander@company.com" required>
+                  <span class="error-message"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone Number (Optional)</label>
+                  <input type="tel" id="phone" class="form-control" placeholder="+1 (555) 000-0000">
+                </div>
+                <div class="form-group">
+                  <label for="serviceSelect" class="form-label">Service Domain *</label>
+                  <select id="serviceSelect" class="form-control" required>
+                    <option value="" disabled selected>Select primary requirement</option>
+                    <option value="Computer Parts & Hardware Solutions">Computer Parts & Hardware Solutions</option>
+                    <option value="Network Infrastructure Setup">Network Infrastructure Setup</option>
+                    <option value="Cloud Services & Consulting">Cloud Services & Consulting</option>
+                    <option value="Turnkey Full-Stack IT Overhaul">Turnkey Full-Stack IT Overhaul</option>
+                  </select>
+                  <span class="error-message"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Project Details & Technical Scope *</label>
+                <textarea id="message" rows="5" class="form-control"
+                  placeholder="Outline your requirements (e.g. server specs, number of network drops, target cloud providers, timeline)..."
+                  required></textarea>
+                <span class="error-message"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.9rem;">
+                <span>Submit Technical Request</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= Footer ================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <div class="logo-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <span class="logo-text">Emre<span>IT</span></span>
+          </a>
+          <p>
+            Enterprise technology partners providing end-to-end hardware procurement, mission-critical networking, and
+            future-proof cloud architecture.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Core Services</h4>
+          <ul class="footer-links">
+            <li><a href="#hardware">Computer Parts & Hardware</a></li>
+            <li><a href="#network">Network Infrastructure Setup</a></li>
+            <li><a href="#cloud">Cloud Services & Consulting</a></li>
+            <li><a href="#catalog">Solutions Explorer</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Engineering</h4>
+          <ul class="footer-links">
+            <li><a href="#hardware">NVMe Storage Fabrics</a></li>
+            <li><a href="#network">Zero-Trust Network Design</a></li>
+            <li><a href="#cloud">Kubernetes GitOps</a></li>
+            <li><a href="#cloud">Disaster Recovery (DRaaS)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#home">About EmreIT</a></li>
+            <li><a href="#contact">Compliance & Certifications</a></li>
+            <li><a href="#contact">NOC 24/7 Portal</a></li>
+            <li><a href="#contact">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 EmreIT Solutions Inc. All rights reserved.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+          <a href="#security">Security Posture</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File (ES Module) -->
+  <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
